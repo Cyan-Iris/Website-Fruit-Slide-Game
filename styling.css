@@ -1,0 +1,107 @@
+html{
+    height:100%;
+    background-image: linear-gradient(300deg,#E9F1F9,white);
+
+}
+#Box{
+    height:520px;
+    width:650px;
+    background-color:#D4E8AF;
+    margin:70px auto;
+   
+    padding:20px 30px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 5px #B3DBA3 ;
+    position:relative;
+
+}
+#main_screen{
+    height:400px;
+    width:600px;
+    background-color:white;
+    /*auto on margin is based on its closest container*/
+    position:absolute;
+    top:70px;
+    left:50px;
+    overflow:hidden;/*when the element insdie it is on the border, it will hide it*/
+}
+
+#start-box{
+    background-color:#C2ABEC;
+    height:30px;
+    width:150px;
+    margin:10px auto;;
+    text-align: center;
+    font-family:cursive;
+    border-radius: 2px;
+    box-shadow:0px 1px 0px grey;
+    position:absolute;
+    left:270px;/*the calculation is from border+height/width+margin*/
+    top:500px;
+
+    
+}
+
+#start-box:hover{
+    background-color: #AFBAE8;
+}
+#start-box:active{
+    top:505px;
+    box-shadow: 2px 1px 2px grey ;
+
+}
+/*when you click it, something will happen*/
+
+#GameOver{
+    height:300px;
+    width:600px;
+    color:white;
+    background-image:linear-gradient(rgb(236, 137, 61),rgb(236, 215, 25));
+    position:fixed;
+    top:150px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 60px;
+    z-index:2;/*the default index is 0, but there is overlapping.so make sure it*/
+    display:none;
+}
+#score{
+    background-color: yellowgreen;
+    width:150px;
+    height:30px;
+    position:absolute;
+    left:500px;
+    text-align: center;
+    font-family: cursive;
+    display:none;
+    z-index: 1;
+}
+#life{
+    background-color: white;
+    width:150px;
+    height:30px;
+    display:none;
+    z-index: 1;
+}
+#fruitContainer{
+    height:100px;
+    width:100px;
+    z-index:0;
+    position:absolute;
+    display:none;
+    
+
+}
+#fruit{
+    height:100px;
+    width:100px;
+    display:none;
+
+
+}
+
+
+
+
+
+/*we use margin to align them, since each div contains a block that you can edit it*/
